@@ -12,7 +12,7 @@ spec:
     size: 2048
   dnsNames:
   {{- required "certificate.dnsNames is required" .Values.certificate.dnsNames | toYaml | nindent 4 }}
-  commonName: {{ .Values.certificate.dnsNames | first }}
+  commonName: {{ .Values.certificate.dnsNames | first | quote }}
   issuerRef:
     name: {{ include "helm-cluster-operations.fullname" . }}-certmanager-clusterissuer
     kind: ClusterIssuer
