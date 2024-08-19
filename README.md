@@ -1,4 +1,4 @@
-# CSYE7125 Helm charts for Cluster Operations
+# Helm charts for Cluster Operations
 
 This repository contains Helm chart designed to deploy istio, cert-manager custom resources for cluster operations
 
